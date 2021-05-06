@@ -20,6 +20,14 @@ const com = {
     score: 0
 }
 
+const net = {
+    x : (canvas.width - 2)/2,
+    y : 0,
+    height : 10,
+    width : 2,
+    color : "WHITE"
+}
+
 const drawRect = (x, y,w,h, color) => {
     ctx.fillStyle = color;
     ctx.fillRect(x, y, w, h);
@@ -39,6 +47,11 @@ const drawCircle = (x, y, r, color) => {
     ctx.fill()
 }
 
+const drawNet = () => {
+    for(let i = 0; i <= canvas.height; i+=15){
+        drawRect(net.x, net.y + i, net.width, net.height, net.color);
+    }
+}
 
 
 let rectX = 0;
@@ -49,8 +62,10 @@ const render = () => {
     drawRect(0, 100, 100, 100, "red")
     drawRect(rectX, 1)
     rectX = rectX + 100;
+
     // create user paddle
     drawRect(user.x, user.y, user.width, user.height, user.color);
+
     // create computer paddle
     drawRect(com.x, com.y, com.width, com.height, com.color);
 }
