@@ -2,6 +2,24 @@ const canvas = document.getElementById("pong");
 
 const ctx = canvas.getContext("2d")
 
+const user = {
+    x: 0,
+    y: canvas.height/2 - 100/2,
+    width: 10,
+    height: 100,
+    color: "white",
+    score: 0
+}
+
+const com = {
+    x: canvas.width - 10,
+    y: canvas.height/2 - 100/2,
+    width: 10,
+    height: 100,
+    color: "white",
+    score: 0
+}
+
 const drawRect = (x, y,w,h, color) => {
     ctx.fillStyle = color;
     ctx.fillRect(x, y, w, h);
@@ -20,6 +38,8 @@ const drawCircle = (x, y, r, color) => {
     ctx.closePath()
     ctx.fill()
 }
+
+
 
 let rectX = 0;
 
