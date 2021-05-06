@@ -21,3 +21,13 @@ const drawCircle = (x, y, r, color) => {
     ctx.fill()
 }
 
+let rectX = 0;
+
+const render = () => {
+    drawRect(0, 0, 600, 400, "black")
+    drawRect(0, 100, 100, 100, "red")
+    drawRect(rectX, 1)
+    rectX = rectX + 100;
+}
+
+setInterval(render, 1000);
