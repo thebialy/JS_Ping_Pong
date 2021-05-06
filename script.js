@@ -44,10 +44,15 @@ const drawCircle = (x, y, r, color) => {
 let rectX = 0;
 
 const render = () => {
+    // create board
     drawRect(0, 0, 600, 400, "black")
     drawRect(0, 100, 100, 100, "red")
     drawRect(rectX, 1)
     rectX = rectX + 100;
+    // create user paddle
+    drawRect(user.x, user.y, user.width, user.height, user.color);
+    // create computer paddle
+    drawRect(com.x, com.y, com.width, com.height, com.color);
 }
 
 setInterval(render, 1000);
