@@ -33,6 +33,7 @@ const drawRect = (x, y, w, h, color) => {
     ctx.fillRect(x, y, w, h);
 }
 
+// draw text
 const drawText = (text, x, y, color) => {
     ctx.fillStyle = color;
     ctx.font = "75px fantasy"
