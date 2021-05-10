@@ -100,4 +100,7 @@ const game = () => {
     render()
 }
 
-setInterval(render, 1000);
+const framePerSecond = 50;
+
+// run game function 50 times every 1 second
+setInterval(game, 1000/framePerSecond);
