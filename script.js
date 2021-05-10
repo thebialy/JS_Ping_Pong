@@ -72,6 +72,10 @@ const render = () => {
 
     // computer score to the right
     drawText(com.score, 3*canvas.width/4, canvas.height/5)
+
+    // create net
+    drawNet()
+
     
 
     // create user paddle
