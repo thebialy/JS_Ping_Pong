@@ -76,7 +76,8 @@ const render = () => {
     // create net
     drawNet()
 
-    
+    // create ball
+    drawCircle(ball.x, ball.y, ball.radius, ball.color)
 
     // create user paddle
     drawRect(user.x, user.y, user.width, user.height, user.color);
