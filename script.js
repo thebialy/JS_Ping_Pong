@@ -44,6 +44,7 @@ const drawText = (text, x, y, color) => {
     ctx.fillText(text, x, y)
 }
 
+// draw circle - used to create the ball
 const drawCircle = (x, y, r, color) => {
     ctx.fillStyle = color;
     ctx.beginPath()
