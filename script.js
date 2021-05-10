@@ -29,6 +29,16 @@ const net = {
     color : "WHITE"
 }
 
+const ball = {
+    x: canvas.width/2,
+    y: canvas.height/2,
+    radius: 10,
+    velocityX: 5,
+    velocityY: 5,
+    speed: 7,
+    color: "white"
+}
+
 // GAME FUNCTIONS
 
 // draw a rectangle - used to draw paddles
@@ -84,6 +94,10 @@ const render = () => {
 
     // create computer paddle
     drawRect(com.x, com.y, com.width, com.height, com.color);
+}
+
+const game = () => {
+    render()
 }
 
 setInterval(render, 1000);
