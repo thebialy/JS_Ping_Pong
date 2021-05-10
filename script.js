@@ -2,6 +2,7 @@ const canvas = document.getElementById("pong");
 
 const ctx = canvas.getContext("2d")
 
+// game objects
 const user = {
     x: 0,
     y: canvas.height/2 - 100/2,
@@ -28,6 +29,9 @@ const net = {
     color : "WHITE"
 }
 
+// GAME FUNCTIONS
+
+// draw a rectangle - used to draw paddles
 const drawRect = (x, y, w, h, color) => {
     ctx.fillStyle = color;
     ctx.fillRect(x, y, w, h);
