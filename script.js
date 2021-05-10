@@ -70,6 +70,9 @@ const render = () => {
     // user score to the left
     drawText(user.score, canvas.width/4, canvas.height/5)
 
+    // computer score to the right
+    drawText(com.score, 3*canvas.width/4, canvas.height/5)
+    
 
     // create user paddle
     drawRect(user.x, user.y, user.width, user.height, user.color);
