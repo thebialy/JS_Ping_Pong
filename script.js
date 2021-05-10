@@ -65,7 +65,7 @@ let rectX = 0;
 
 const render = () => {
     // create board
-    drawRect(0, 0, 600, 400, "black")
+    drawRect(0, 0, canvas.width, canvas.height, "black")
     drawRect(rectX, 1)
     rectX = rectX + 100;
 
