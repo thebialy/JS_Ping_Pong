@@ -76,6 +76,13 @@ const collision = (b,p) {
     p.bottom = p.y + p.height;
     p.left = p.x;
     p.right = p.x + p.width;
+
+    b.top = b.y - b.radius;
+    b.bottom = b.y + b.radius;
+    b.left = b.x - b.radius;
+    b.right = b.x + b.radius
+
+    return p.left < b.right && p.top < b.bottom && p.right > b.left && p.bottom > b.top;
 }
 
 
