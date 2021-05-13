@@ -71,7 +71,7 @@ const drawNet = () => {
 }
 
 // function to detect collision
-const collision = (b,p) {
+const collision = (b,p) => {
     p.top = p.y;
     p.bottom = p.y + p.height;
     p.left = p.x;
