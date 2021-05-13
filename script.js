@@ -26,7 +26,7 @@ const net = {
     y : 0,
     height : 10,
     width : 2,
-    color : "WHITE"
+    color : "white"
 }
 
 const ball = {
