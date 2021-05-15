@@ -89,6 +89,7 @@ const collision = (b,p) => {
 let rectX = 0;
 
 const render = () => {
+    
     // create board
     drawRect(0, 0, canvas.width, canvas.height, "black")
 
