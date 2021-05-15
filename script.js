@@ -86,9 +86,6 @@ const collision = (b,p) => {
     return p.left < b.right && p.top < b.bottom && p.right > b.left && p.bottom > b.top;
 }
 
-
-
-
 const render = () => {
     
     // create board
