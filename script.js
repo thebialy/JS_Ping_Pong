@@ -80,7 +80,7 @@ const collision = (b,p) => {
     b.top = b.y - b.radius;
     b.bottom = b.y + b.radius;
     b.left = b.x - b.radius;
-    b.right = b.x + b.radius
+    b.right = b.x + b.radius;
 
     return p.left < b.right && p.top < b.bottom && p.right > b.left && p.bottom > b.top;
 }
