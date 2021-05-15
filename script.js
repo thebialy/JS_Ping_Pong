@@ -87,7 +87,7 @@ const collision = (b,p) => {
 }
 
 
-let rectX = 0;
+
 
 const render = () => {
     
