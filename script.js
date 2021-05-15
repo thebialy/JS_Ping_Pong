@@ -1,5 +1,4 @@
 const canvas = document.getElementById("pong");
-
 const ctx = canvas.getContext("2d")
 
 // game objects
@@ -72,7 +71,7 @@ const drawNet = () => {
 
 // function to detect collision
 const collision = (b,p) => {
-    
+
     p.top = p.y;
     p.bottom = p.y + p.height;
     p.left = p.x;
